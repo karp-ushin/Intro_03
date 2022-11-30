@@ -1,9 +1,10 @@
-def decToBin(n):
+def dec_to_bin(n):
     binary = ""
-    while (n):
+    while n:
         reminder = n % 2
         binary += str(reminder)
         n //= 2
-    binary = binary[:: -1]
-    return binary
-print(decToBin(45))
+    return binary[:: -1]
+
+
+print(dec_to_bin(45))
